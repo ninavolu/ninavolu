@@ -6,7 +6,7 @@ Rising senior at Fulton Science Academy in Atlanta. I build software end to end 
 
 **Order-tracking inventory SaaS.** An email-to-inventory pipeline that reads order emails across up to 8 Gmail inboxes, sends each one to the Claude API for structured field extraction, deduplicates by order number, and logs everything to a live dashboard. I sold it as a $50/month subscription to a six-figure reselling brand and ran the whole thing myself, from OAuth setup to customer delivery.
 
-**pixlib: Image Library MCP server.** A Model Context Protocol server that lets Claude search and manage an image library inside a normal conversation. I took it from a local prototype to a hosted, multi-tenant product: Clerk OAuth, Supabase (PostgreSQL) with indexed tag search, Cloudflare R2 storage, served over Streamable HTTP on Railway. Live at [pixlib.app](https://pixlib.app).
+**pixlib: Image Library MCP server.** A Model Context Protocol server that lets Claude search and manage an image library inside a normal conversation. I took it from a local prototype to a hosted, multi-tenant product: Clerk OAuth, Supabase (PostgreSQL plus storage) with indexed tag search, served over Streamable HTTP on Railway. Live at [pixlib.app](https://pixlib.app).
 
 **HIPAA-aware zero-knowledge proof system.** Proves a patient qualifies for a clinical trial without revealing their medical record. I wrote a Circom circuit compiled to R1CS, proved it with Groth16 zk-SNARKs over the BN254 curve, and bound each proof to one record with a two-stage Poseidon hash. Two separate services model a hospital and a trial sponsor that don't trust each other; the sponsor only ever learns eligible: true or false. Live at [hipaa-zkp.netlify.app](https://hipaa-zkp.netlify.app).
 
